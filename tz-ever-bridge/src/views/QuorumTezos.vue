@@ -1,6 +1,7 @@
 <template>
   <main>
     <div class="center">
+      <div>Send transaction to Tezos Quorum contract</div>
       <div><input type="text" v-model="amount" placeholder="Amount"></div>
       <div><input type="text" v-model="privateKey" placeholder="Recipient private key"></div>
       <div><input type="text" v-model="addressTo" placeholder="AddressTo"></div>

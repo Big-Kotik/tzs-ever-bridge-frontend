@@ -1,6 +1,7 @@
 <template>
   <main>
     <div class="center">
+      <div>Send transaction to Everscale Quorum contract</div>
       <div><input type="text" v-model="amount" placeholder="Amount"></div>
       <div><input type="text" v-model="addressTo" placeholder="AddressTo"></div>
       <div><input type="text" v-model="signature" placeholder="Signature"></div>
@@ -37,7 +38,7 @@ export default {
 
       const params = {
         abi: abiContract(QuorumImpl),
-        address: "0:30053fed6ff227e3f8bf3b6f3fbd729c95130c6c97729293fb9b54afb8932fa0",
+        address: "0:22169a4a81cdc4dded4ff6431950d48c939f1ea06c06deec72e9db9b4d0ec9f8",
         call_set: {
           function_name: "sendTransaction",
           input: {

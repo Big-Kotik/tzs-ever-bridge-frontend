@@ -80,6 +80,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   background-color: #2F2FA2;
+  color: white;
 }
 </style>
 <script>

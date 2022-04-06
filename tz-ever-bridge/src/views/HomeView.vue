@@ -7,13 +7,15 @@
         <div><input type="text" v-model="amount" placeholder="Amount"></div>
         <div><input type="text" v-model="privateKey" placeholder="Private key"/></div>
         <div><input type="text" v-model="addressTo" placeholder="AddressTo"></div>
+        <div class="move"><a href="#" @click="sendTezosTransaction()">Move tokens</a></div>
       </template>
       <template v-else>
         <div><input type="text" v-model="amount" placeholder="Amount"></div>
         <div><input type="text" v-model="privateKey" placeholder="From"/></div>
         <div><input type="text" v-model="addressTo" placeholder="To"></div>
+        <div class="move"><a href="#" @click="sendEverTransaction()">Move tokens</a></div>
       </template>
-      <div class="move"><a href="#" @click="sendEverTransaction()">Move tokens</a></div>
+
     </div>
     <TokenView :token=tokenTo direction="To"/>
   </main>
